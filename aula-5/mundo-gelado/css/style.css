@@ -1,0 +1,227 @@
+/* Media query - mobile-first
+420px é o padrão  */
+
+body {
+  font-family: 'Nunito', 'Varela Round', sans-serif;
+  font-size: 10px;
+  margin: 0;
+  background-color: #F8F9FA;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+.menu__nav {
+  display: none;
+}
+
+header {
+  background-color: #9abed3;
+}
+
+h3 {
+  color: #F8F9FA;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.menu__mobile {
+  color: #A4BAC7;
+  border: 1px solid #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin: 5px 10px;
+  font-size: 1rem;
+  max-width: 36px;
+}
+
+.wrapper {
+  background-image: linear-gradient(black, black), url(../img/foto-banner.jpg);
+  background-size: cover;
+  background-blend-mode: saturation;
+  width: 100%;
+  height: 93vh;
+  /* Medida relativa ao tamanho da tela*/
+  justify-content: center;
+  display: flex;
+  /* Faz com que o justify-content: center funcione no filho*/
+}
+
+.container-01 {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;      não havia funcionado antes pq o pai não era display flex*/
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.titulo {  
+    background: -webkit-linear-gradient(#fff, rgb(73, 72, 72));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 2.5rem;
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    /* font-variant: small-caps;
+    font-stretch: expanded; */
+    
+}
+
+
+.btn-mais {
+  padding: 15px 10px;
+  background-color: rgb(146, 146, 146);
+  color: #fff;
+  border-radius: 4px;
+  flex-grow: 0;
+}
+
+.lugares {
+  max-width: 93%;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.lugares__texto {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.lugares-siberia {
+  background-color: #F8F9FA;
+  margin-bottom: 0px;
+}
+
+.lugares-groelandia {
+  margin-top: 0px;
+}
+
+.lugares img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE */
+}
+
+.lugares__texto {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  color: #F8F9FA;
+}
+
+.lugares__texto-siberia {
+  color: #000;
+}
+
+.lugares__texto-siberia h3{
+  color: #000;
+}
+
+.info {
+  background-image: linear-gradient(black, black), url(../img/foto-banner.jpg);
+  background-size: cover;
+  background-blend-mode: saturation;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.info__local {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.centralizar {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.form__dados {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.form h3 {
+  display: block;
+  /*se não colocar display block não centraliza*/
+  text-align: center;
+}
+
+.form h5, h3 {
+  color: #fff;
+}
+
+.form p {
+  color: rgb(179, 177, 177);
+}
+
+.linha {
+  content: "";
+  border-bottom: solid;
+  color: #fff;
+}
+
+.btn {
+  background-color: rgb(173, 176, 207);
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #161616;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.footer a {
+  color: rgb(152, 185, 221);
+  padding: 20px 0 40px 0;
+}
+
+.footer__redes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  max-width: 60%;
+}
+
+footer p {
+  color: #8e8a8a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 30px 0 50px 0;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 968px) {}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1200px) {}

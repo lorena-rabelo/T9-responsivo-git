@@ -36,11 +36,11 @@ h2 {
   font-weight: bold;
   font-size: 2.4em;
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.8em;
 }
 
@@ -107,6 +107,7 @@ p {
 .agencia {
   background: linear-gradient(to bottom, #161616 0, rgba(22, 22, 22, .9) 75%, rgba(22, 22, 22, .8) 100%);
   color: #F8F9FA;
+  padding: 20px 0;
 }
 
 .agencia-container {
@@ -119,6 +120,8 @@ p {
 }
 
 .lugares {
+  display: flex;
+  flex-direction: column;
   max-width: 93%;
   width: 100%;
   margin: 40px auto;
@@ -252,7 +255,27 @@ footer p {
   margin: 30px 0 0px 0;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+  .agencia-container {
+    width: 50%;
+  }
+  .lugares {
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0px auto;
+    padding-bottom: 0;
+  }
+  .lugares img {
+    width: 50%;
+  }
+  .lugares__texto {
+    text-align: start;
+    padding: 0px 30px;
+  }
+  .antartida {
+    order: -1;
+  }
+}
 
 @media (min-width: 968px) {}
 

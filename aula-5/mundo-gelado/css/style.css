@@ -10,7 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 ul {
@@ -256,6 +256,13 @@ footer p {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
   .agencia-container {
     width: 50%;
   }
@@ -272,13 +279,71 @@ footer p {
     text-align: start;
     padding: 0px 30px;
   }
+  .lugares-siberia {
+    margin-top: 100px;
+  }
+  .lugares-siberia img {
+    width: 60%;
+  }
+  .lugares-antartida {
+    margin-bottom: 100px;
+  }
+  .lugares-groelandia {
+    margin-top: 40px;
+  }
   .antartida {
     order: -1;
   }
+  .menu__mobile {
+    display: none;
+  }
+  .container {
+    width: 90%;
+  }
+  .menu__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .menu__nav a {
+    display: flex;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px;
+  }
 }
 
-@media (min-width: 968px) {}
+@media (min-width: 968px) {
+  body {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 2em;
+    max-width: 100%;
+  }
+}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+  .form {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .agencia-container {
+    width: 40%;
+    margin: 40px auto;
+  }
+  .lugares__texto {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
 
 @media (min-width: 1200px) {}
